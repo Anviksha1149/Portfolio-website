@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale-1.0">
+        <title>Portfolio html doc</title>
+        <link rel="stylesheet" href="style.css">
+
+        <body>
+           <div id="header">
+               <div class="container">
+                   <nav>
+                       <h1 class="logo">Anviksha</h1>
+                       <ul>
+                           <li><a href="">Home</a></li>
+                           <li><a href="">About</a></li>
+                           <li><a href="">Projects</a></li>
+                           <li><a href="">Portfolio</a></li>
+                           <li><a href="">Contact</a></li>
+
+                       </ul>
+
+
+                   </nav>
+                   <div class="header-text">
+                       <p>Computer Science Student</p>
+                      <h1>Hi, I'm <span>Anviksha</span>.</h1>
+                   </div>
+               </div>
+           </div> 
+<!--...........             about        ...............                 -->
+           <div id="about">
+               <div class="container">
+                   <div class="row">
+                       <div class="about-col-1">
+                           <img src="images/MEE.jpg">
+                        </div>
+
+                        <div class="about-col-2">
+                            <h1 class="subtitle">About Me</h1>
+                            <p>"I'm a computer science student who sees code as a canvas for endless possibilities. My journey began with Java, where I discovered a passion for structure and elegance. 
+                                But my exploration didn't stop there. I ventured into Python's versatility, embraced OpenCV's visual magic, and now I'm navigating the exciting frontiers of web development.
+                                I'm constantly learning and growing, and I invite you to explore my portfolio, see what I've accomplished, and perhaps even collaborate on future projects. Let's build something great together!"
+                            </p>
+                            <div class="tab-title">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Java</span>Building expertise in java.</li>
+                                    <li><span>Python</span>Confidently leveraging Python and OpenCV to<br> real world image processing solutions. </li>
+                                    <li><span>SQL</span>Efficiently queying and managing relational database.</li>
+                                    <li><span>JavaScript HTML CSS</span>Learner ,crafting interactive tools with<br> early projects under my belt.</li>
+                                    
+
+                                </ul>
+
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2018</span>  Maharishi Patanjali Vidya Mandir School<br>
+                                    High-School Percentage:93%</li>
+                                    <li><span>2020</span> Maharishi Patanjali Vidya Mandir School<br>
+                                    12th Boards Percentage:94%</li>
+                                    <li><span>2021</span>Kalinga Institute Of Industrial Technology<br>
+                                    Current CGPA :8.82<br>Passing Year:2025</li>
+                                    
+                                    
+
+                                </ul>
+
+                            </div>
+                            
+
+
+
+
+                        </div>
+
+                       
+                   </div>
+               </div>
+
+           </div>
+           <script>
+               var tablinks = document.getElementsByClassName("tab-links");
+               var tabcontents = document.getElementsByClassName("tab-contents");
+               function opentab(tabname){
+                   for(tablink of tablinks){
+                       tablink.classList.remove("active-link");
+
+                   }
+                   for(tabcontent of tabcontents){
+                       tabcontent.classList.remove("active-tab");
+                   }
+                   event.currentTarget.classList.add("active-link");
+                   document.getElementById(tabname).classList.add("active-tab");
+               }
+           </script>
+        </body>
+    </head>
+</html>
