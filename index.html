@@ -6,12 +6,14 @@
         <meta name="viewport" content="width=device-width,initial-scale-1.0">
         <title>Portfolio html doc</title>
         <link rel="stylesheet" href="style.css">
-
+        <script src="https://kit.fontawesome.com/2597850d0e.js" crossorigin="anonymous"></script>
+        <!--this is the link got from a free website fontawesome to get free icons--> 
+        </head>
         <body>
            <div id="header">
                <div class="container">
                    <nav>
-                     l  <h1 class="logo">Anviksha</h1>
+                       <h1 class="logo">Anviksha</h1>
                        <ul>
                            <li><a href="">Home</a></li>
                            <li><a href="">About</a></li>
@@ -84,6 +86,61 @@
                </div>
 
            </div>
+<!--.........................................projects.......................................-->
+
+           <div id="project">
+             <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="project-list">
+                    <div>
+                        <i class="fa-regular fa-face-viewfinder"></i>
+                        <h2>Facial-Recognition<br>(Face Attendance system)</h2>
+                        <p>A facial recognition system used to mark and update the attendance of students<br>
+                        Using OpenCV,Python and Firebase. </p>
+                        <a href="">Learn more.</a>
+                    </div>
+                    <div>
+                        <i class="fa-regular fa-gamepad"></i>
+                        <h2>Rock-Paper-Scissor Game.</h2>
+                        <p>A simple project build using HTML,Css Javascript.<br></p>
+                        <a href="">Learn more.</a>
+                    </div>
+
+                </div>
+
+             </div>
+           </div>
+           <!--..........................Contact............................-->
+
+           <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i>anvikshasingh01@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>7052452571</p>
+                        <div class="social-icon">
+                            <a href="https://www.instagram.com/anvikshas?igsh=Z3VieXc4aWs3Nmox"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="http://www.twitter.com/@anviksha527"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                        <a href="images/Resume.pdf" download class="btn">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email"  name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn" name="submit">Summit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+           </div>
+
+            
+           
            <script>
                var tablinks = document.getElementsByClassName("tab-links");
                var tabcontents = document.getElementsByClassName("tab-contents");
@@ -100,5 +157,5 @@
                }
            </script>
         </body>
-    </head>
+    
 </html>
